@@ -1,15 +1,14 @@
 <?php
 
-    function cumprimentar() {
+    function cumprimentar($nome, $sobrenome = null) {
         //Bloco de código
-        return "Olá mundo! <br>";
+        echo "Olá $nome $sobrenome! <br>";
     }
 
     function completar() {
-        echo "Olá essa é a função completar <br>";
-        cumprimentar();
+        echo "Olá, essa é a função completar <br>";
     }
 
-    completar();
+    cumprimentar("Rafael", "Morais");
 
 ?>
